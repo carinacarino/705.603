@@ -9,4 +9,5 @@ https://flask.palletsprojects.com/en/3.0.x/
 - **Inference Determination**: Make predictions by submitting age and salary parameters through `/infer`.
 
 
-Required libraries are in requirements.txt
+
+Note: Required libraries are in requirements.txt
