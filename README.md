@@ -9,5 +9,8 @@ Achieving the full capability of AI requires a system perspective, extending bey
 
 ### Instructor
 Vince Pulido
+
 vince.pulido@jhu.edu
 
+Module 1:
+Module 2: ML_Microservice_Example
