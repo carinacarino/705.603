@@ -1,10 +1,4 @@
 # ML_Microservice_Example
-Example code to build microservice to return learning stats and provide inference
+This microservice serves as an example of leveraging machine learning to enhance decision-making in targeted advertising campaigns. It predicts whether an individual is a good candidate for advertising based on their age and salary. The prediction model is built on a **Random Forest** algorithm, trained using data from the 'Social_Network_Ads.csv' dataset.
 
-Provides two microservices
-1) returns performance stats - http://localhost:8786/stats
-2) returns inference determination given an age and salary - http://localhost:8786/infer?age=45&salary=40000
-
-## Design Outline in Design.ipynb
-Populate throughout for your final project
 
