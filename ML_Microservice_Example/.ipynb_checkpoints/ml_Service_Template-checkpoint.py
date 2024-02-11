@@ -27,7 +27,7 @@ def hellopost():
     print("Name: ", name, " Location: ", location)
     imagefile = request.files.get('imagefile', '')
     print("Image: ", imagefile.filename)
-    imagefile.save('/workspace/ML_Microservice_Example/image.jpg')
+    imagefile.save('/workspace/Hopkins/705.603Fall2023/workspace/ML_Microservice_Example/image.jpg')
     return 'File Received - Thank you'
 
 if __name__ == "__main__":

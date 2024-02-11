@@ -1,4 +1,5 @@
 numpy
-scikit-learn
+sklearn
 pandas
 flask
+os
