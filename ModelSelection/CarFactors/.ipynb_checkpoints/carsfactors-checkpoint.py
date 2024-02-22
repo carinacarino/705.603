@@ -1,91 +1,93 @@
 # Multiple Linear Regression
-
-# Importing the libraries
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import r2_score
+from sklearn.preprocessing import OrdinalEncoder, OneHotEncoder, StandardScaler
 import numpy as np
 import pandas as pd
-from sklearn.preprocessing import OrdinalEncoder
-from sklearn.preprocessing import OneHotEncoder
-from sklearn.preprocessing import StandardScaler
-
+import warnings
+warnings.filterwarnings('ignore')
 
 class carsfactors:
     def __init__(self):
         self.modelLearn = False
         self.stats = 0
+        self.ordinal_encoder = None
+        self.onehot_encoder_transmission = None
+        self.onehot_encoder_color = None
+        self.scaler = None
+        self.model = None
 
     def model_learn(self):
-        # Importing the dataset into a pandas dataframe
-
-
-        #Remove Unwanted Columns - 'manufacturer_name', 'model_name', 'engine_fuel','engine_has_gas', 'engine_type', 'engine_capacity','has_warranty', 'is_exchangeable', 'state', 'location_region', drivetrain',  'number_of_photos','up_counter', 'feature_0', 'feature_1','feature_2', 'feature_3', 'feature_4', 'feature_5', 'feature_6', 'feature_7'
- 
-        # Seperate X and y (features and label)  The last feature "duration_listed" is the label (y)
-        # Seperate X vs Y
- 
-        # Do the ordinal Encoder for car type to reflect that some cars are bigger than others.  
-        # This is the order 'universal','hatchback', 'cabriolet','coupe','sedan','liftback', 'suv', 'minivan', 'van','pickup', 'minibus','limousine'
-        # make sure this is the entire set by using unique()
-        # create a seperate dataframe for the ordinal number - so you must strip it out and save the column
-        # make sure to save the OrdinalEncoder for future encoding due to inference
-    
-
-        # Do onehotencoder for Transmission only - again you need to make a new dataframe with just the encoding of the transmission
-        # save the OneHotEncoder to use for future encoding of transmission due to inference
- 
-        # Do onehotencoder for Color
-        # Save the OneHotEncoder to use for future encoding of color for inference
-
-        # combine all three together endocdings into 1 data frame (need 2 steps with "concatenate")
-        # add the ordinal and transmission then add color
-
-        # then dd to original data set
+        file_path = 'cars.csv'
+        df = pd.read_csv(file_path)
         
-        #delete the columns that are substituted by ordinal and onehot - delete the text columns for color, transmission, and car type 
-
-        # Splitting the dataset into the Training set and Test set 
-
-        # Feature Scaling - required due to different orders of magnitude across the features
-        # make sure to save the scaler for future use in inference
-
-        # Select useful model
-        from sklearn.linear_model import 
-        self.model = 
-        self.model.fit(X_train, y_train)
+        X = df[['transmission', 'color', 'odometer_value', 'year_produced', 'body_type', 'price_usd']]
+        y = df['duration_listed']
         
-        self.stats = self.model.score(X_train, y_train)
+        # Ordinal Encoding for 'body_type'
+        body_type_order = ['universal', 'hatchback', 'cabriolet', 'coupe', 'sedan', 'liftback', 'suv', 'minivan', 'van', 'pickup', 'minibus', 'limousine']
+        self.ordinal_encoder = OrdinalEncoder(categories=[body_type_order])
+        X.loc[:, 'body_type_encoded'] = self.ordinal_encoder.fit_transform(X[['body_type']])
+
+        
+        # OneHot Encoding for 'transmission'
+        self.onehot_encoder_transmission = OneHotEncoder(sparse=False, drop='first')
+        transmission_encoded = self.onehot_encoder_transmission.fit_transform(X[['transmission']])
+        transmission_df = pd.DataFrame(transmission_encoded, columns=self.onehot_encoder_transmission.get_feature_names_out(['transmission']))
+        
+        # OneHot Encoding for 'color'
+        self.onehot_encoder_color = OneHotEncoder(sparse=False, drop='first')
+        color_encoded = self.onehot_encoder_color.fit_transform(X[['color']])
+        color_df = pd.DataFrame(color_encoded, columns=self.onehot_encoder_color.get_feature_names_out(['color']))
+        
+        # Combining all features
+        X.drop(['transmission', 'color', 'body_type'], axis=1, inplace=True)
+        
+        X_encoded = pd.concat([X, transmission_df, color_df], axis=1)
+        
+        # Splitting the dataset
+        X_train, X_test, y_train, y_test = train_test_split(X_encoded, y, test_size=0.2, random_state=0)
+        
+        
+        
+        # Feature Scaling
+        self.scaler = StandardScaler()
+        X_train_scaled = self.scaler.fit_transform(X_train)
+        X_test_scaled = self.scaler.transform(X_test)  # Correct use of transform for the test set
+        
+
+        # Model Training
+        self.model = LinearRegression()
+        self.model.fit(X_train_scaled, y_train)  # Use scaled training data
+        
+        # Model Evaluation
+        y_pred = self.model.predict(X_test_scaled)
+        self.stats = r2_score(y_test, y_pred)
+        
         self.modelLearn = True
+      
+    def model_infer(self, transmission, color, odometer, year, bodytype, price):
+        if not self.modelLearn:
+            print("Model has not been trained. Please train the model first.")
+            return
 
-    # this demonstrates how you have to convert these values using the encoders and scalers above
-    def model_infer(self,transmission, color, odometer, year, bodytype, price):
-         if(self.modelLearn == False):
-            self.model_learn()
+        # Preprocess inputs
+        try:
+            bodytype_encoded = self.ordinal_encoder.transform([[bodytype]])
+        except ValueError as e:
+            print(f"Error: {e}. Unknown category '{bodytype}' found for 'bodytype'.")
+            return
 
-        #convert the body type into a numpy array that holds the correct encoding
-        carTypeTest = 
-        carTypeTest = 
- 
-        #convert the transmission into a numpy array with the correct encoding
-        carHotTransmissionTest = 
-        carHotTransmissionTest = 
-        
-        #conver the color into a numpy array with the correct encoding
-        carHotColorTest = 
-        carHotColorTest = 
+        transmission_encoded = self.onehot_encoder_transmission.transform([[transmission]])
+        color_encoded = self.onehot_encoder_color.transform([[color]])
 
-        #add the three above
-        total = np.concatenate((carTypeTest,carHotTransmissionTest), 1)
-        total = np.concatenate((total,carHotColorTest), 1)
-        
-        # build a complete test array and then predict
-        othercolumns = np.array([[odometer ,year, price]])
-        totaltotal = np.concatenate((total, othercolumns),1)
+        features = np.hstack([bodytype_encoded, transmission_encoded, color_encoded, np.array([[odometer, year, price]])])
+        features_scaled = self.scaler.transform(features)
 
-        #must scale
-        attempt = 
-        
-        #determine prediction
-        y_pred = 
-        return str(y_pred)
+        # Predict the outcome
+        y_pred = self.model.predict(features_scaled)
+        return str(y_pred[0])
         
     def model_stats(self):
         if(self.modelLearn == False):
