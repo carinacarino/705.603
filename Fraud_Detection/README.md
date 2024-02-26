@@ -23,6 +23,9 @@ docker buildx build -t ""<docker_user_name>/705.603:Fraud_Detection_1" --platfor
 docker run -v <host directory>:/output ccarino/705.603:Fraud_Detection_1
 ```
 ### Setting Up Postman for API Testing
+
+<img width="953" alt="image" src="https://github.com/carinacarino/705.603SP24/assets/104400185/bb995dc6-e70f-4af1-8317-0c8ff95d2f54">
+
 - **Method:** `POST`
   - **URL:** `http://0.0.0.0:8786/predict`
     - **Body:** 
@@ -55,6 +58,7 @@ docker run -v <host directory>:/output ccarino/705.603:Fraud_Detection_1
           }
       ```     
       - Hit `Send`
+
 
 
   
