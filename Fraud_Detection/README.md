@@ -15,12 +15,14 @@ All required libraries are listed on requirements.txt
 
 ## How to use
 ### Creating docker image
-```docker buildx build -t ""<docker_user_name>/705.603:Fraud_Detection_1" --platform linux/amd64,linux/arm64 --push .
+```
+docker buildx build -t ""<docker_user_name>/705.603:Fraud_Detection_1" --platform linux/amd64,linux/arm64 --push .
 ```
 ### Local test
-```docker run -v <host directory>:/output ccarino/705.603:Fraud_Detection_1
 ```
-##Setting Up Postman for API Testing
+docker run -v <host directory>:/output ccarino/705.603:Fraud_Detection_1
+```
+### Setting Up Postman for API Testing
 - **Method:** `POST`
   - **URL:** `http://0.0.0.0:8786/predict`
     - **Body:** 
