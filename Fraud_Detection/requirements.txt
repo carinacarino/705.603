@@ -6,3 +6,4 @@ scipy
 Flask
 imbalanced-learn
 joblib
+xgboost
