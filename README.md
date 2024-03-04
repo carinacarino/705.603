@@ -12,6 +12,3 @@ Vince Pulido
 
 vince.pulido@jhu.edu
 
-**Module 1**:
-
-**Module 2**: ML_Microservice_Example
