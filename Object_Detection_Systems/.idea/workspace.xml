@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c3bbb298-3b24-4796-8ab7-461e88237943" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../license_plate_recognition/data_pipeline.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../license_plate_recognition/data_pipeline_practice.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../license_plate_recognition/dataset.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../license_plate_recognition/metrics.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../license_plate_recognition/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fraud_Detection/.ipynb_checkpoints/Dockerfile-checkpoint" beforeDir="false" afterPath="$PROJECT_DIR$/../Fraud_Detection/.ipynb_checkpoints/Dockerfile-checkpoint" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fraud_Detection/.ipynb_checkpoints/system_plan-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../Fraud_Detection/.ipynb_checkpoints/system_plan-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fraud_Detection/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../Fraud_Detection/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fraud_Detection/SystemPlan.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Fraud_Detection/SystemPlan.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fraud_Detection/analysis/catboost_info/catboost_training.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Fraud_Detection/analysis/catboost_info/catboost_training.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fraud_Detection/analysis/catboost_info/learn/events.out.tfevents" beforeDir="false" afterPath="$PROJECT_DIR$/../Fraud_Detection/analysis/catboost_info/learn/events.out.tfevents" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fraud_Detection/analysis/catboost_info/learn_error.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/../Fraud_Detection/analysis/catboost_info/learn_error.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fraud_Detection/analysis/catboost_info/test/events.out.tfevents" beforeDir="false" afterPath="$PROJECT_DIR$/../Fraud_Detection/analysis/catboost_info/test/events.out.tfevents" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fraud_Detection/analysis/catboost_info/test_error.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/../Fraud_Detection/analysis/catboost_info/test_error.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fraud_Detection/analysis/catboost_info/time_left.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/../Fraud_Detection/analysis/catboost_info/time_left.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fraud_Detection/analysis/exploratory_data_analysis.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../Fraud_Detection/analysis/exploratory_data_analysis.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fraud_Detection/analysis/model_performance.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../Fraud_Detection/analysis/model_performance.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fraud_Detection/data_pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Fraud_Detection/data_pipeline.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fraud_Detection/dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Fraud_Detection/dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fraud_Detection/etl_pipeline_state_label_encoders.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/../Fraud_Detection/etl_pipeline_state_label_encoders.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fraud_Detection/etl_pipeline_state_one_hot_columns.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/../Fraud_Detection/etl_pipeline_state_one_hot_columns.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fraud_Detection/metrics.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Fraud_Detection/metrics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fraud_Detection/model.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/../Fraud_Detection/model.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fraud_Detection/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Fraud_Detection/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fraud_Detection/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Fraud_Detection/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fraud_Detection/results/model_evaluation_report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Fraud_Detection/results/model_evaluation_report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fraud_Detection/scaler.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/../Fraud_Detection/scaler.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ML_Microservice_Example/.ipynb_checkpoints/Dockerfile-checkpoint" beforeDir="false" afterPath="$PROJECT_DIR$/../ML_Microservice_Example/.ipynb_checkpoints/Dockerfile-checkpoint" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ML_Microservice_Example/.ipynb_checkpoints/ml_Service_Template-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../ML_Microservice_Example/.ipynb_checkpoints/ml_Service_Template-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ML_Microservice_Example/.ipynb_checkpoints/ml_Service_Template-checkpoint.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ML_Microservice_Example/.ipynb_checkpoints/ml_Service_Template-checkpoint.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ML_Microservice_Example/.ipynb_checkpoints/requirements-checkpoint.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ML_Microservice_Example/.ipynb_checkpoints/requirements-checkpoint.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ML_Microservice_Example/Design.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../ML_Microservice_Example/Design.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ML_Microservice_Example/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../ML_Microservice_Example/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ML_Microservice_Example/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../ML_Microservice_Example/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ML_Microservice_Example/Social_Network_Ads.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../ML_Microservice_Example/Social_Network_Ads.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ML_Microservice_Example/image.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../ML_Microservice_Example/image.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ML_Microservice_Example/ml_Service_Template.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../ML_Microservice_Example/ml_Service_Template.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ML_Microservice_Example/ml_Service_Template.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ML_Microservice_Example/ml_Service_Template.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ML_Microservice_Example/randomforest.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ML_Microservice_Example/randomforest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ML_Microservice_Example/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ML_Microservice_Example/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ModelSelection/.ipynb_checkpoints/ChatGPT-checkpoint.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ModelSelection/.ipynb_checkpoints/ChatGPT-checkpoint.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ModelSelection/.ipynb_checkpoints/Generalization-checkpoint.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../ModelSelection/.ipynb_checkpoints/Generalization-checkpoint.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ModelSelection/.ipynb_checkpoints/ModelDecisionFactors-checkpoint.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../ModelSelection/.ipynb_checkpoints/ModelDecisionFactors-checkpoint.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ModelSelection/.ipynb_checkpoints/ModelSelect-checkpoint.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../ModelSelection/.ipynb_checkpoints/ModelSelect-checkpoint.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ModelSelection/.ipynb_checkpoints/ModelSelectionExercise-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../ModelSelection/.ipynb_checkpoints/ModelSelectionExercise-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ModelSelection/.ipynb_checkpoints/ModelTypes-checkpoint.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../ModelSelection/.ipynb_checkpoints/ModelTypes-checkpoint.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ModelSelection/.ipynb_checkpoints/SpeedDatingData-checkpoint.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../ModelSelection/.ipynb_checkpoints/SpeedDatingData-checkpoint.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ModelSelection/.ipynb_checkpoints/SpeedDatingKey-checkpoint.md" beforeDir="false" afterPath="$PROJECT_DIR$/../ModelSelection/.ipynb_checkpoints/SpeedDatingKey-checkpoint.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ModelSelection/.ipynb_checkpoints/readme-checkpoint.md" beforeDir="false" afterPath="$PROJECT_DIR$/../ModelSelection/.ipynb_checkpoints/readme-checkpoint.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ModelSelection/CarFactors/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../ModelSelection/CarFactors/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ModelSelection/CarFactors/.idea/CarFactors.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ModelSelection/CarFactors/.idea/CarFactors.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ModelSelection/CarFactors/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ModelSelection/CarFactors/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ModelSelection/CarFactors/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ModelSelection/CarFactors/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ModelSelection/CarFactors/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ModelSelection/CarFactors/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ModelSelection/CarFactors/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ModelSelection/CarFactors/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ModelSelection/CarFactors/.ipynb_checkpoints/Dockerfile-checkpoint" beforeDir="false" afterPath="$PROJECT_DIR$/../ModelSelection/CarFactors/.ipynb_checkpoints/Dockerfile-checkpoint" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ModelSelection/CarFactors/.ipynb_checkpoints/README-checkpoint.md" beforeDir="false" afterPath="$PROJECT_DIR$/../ModelSelection/CarFactors/.ipynb_checkpoints/README-checkpoint.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ModelSelection/CarFactors/.ipynb_checkpoints/carfactors-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../ModelSelection/CarFactors/.ipynb_checkpoints/carfactors-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ModelSelection/CarFactors/.ipynb_checkpoints/carfactors_service-checkpoint.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ModelSelection/CarFactors/.ipynb_checkpoints/carfactors_service-checkpoint.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ModelSelection/CarFactors/.ipynb_checkpoints/cars-checkpoint.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../ModelSelection/CarFactors/.ipynb_checkpoints/cars-checkpoint.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ModelSelection/CarFactors/.ipynb_checkpoints/carsfactors-checkpoint.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ModelSelection/CarFactors/.ipynb_checkpoints/carsfactors-checkpoint.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ModelSelection/CarFactors/.ipynb_checkpoints/codeSamplesforCategoricalData-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../ModelSelection/CarFactors/.ipynb_checkpoints/codeSamplesforCategoricalData-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ModelSelection/CarFactors/.ipynb_checkpoints/requirements-checkpoint.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ModelSelection/CarFactors/.ipynb_checkpoints/requirements-checkpoint.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ModelSelection/CarFactors/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../ModelSelection/CarFactors/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ModelSelection/CarFactors/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../ModelSelection/CarFactors/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ModelSelection/CarFactors/carfactors.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../ModelSelection/CarFactors/carfactors.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ModelSelection/CarFactors/carfactors_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ModelSelection/CarFactors/carfactors_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ModelSelection/CarFactors/cars.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../ModelSelection/CarFactors/cars.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ModelSelection/CarFactors/carsfactors.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ModelSelection/CarFactors/carsfactors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ModelSelection/CarFactors/codeSamplesforCategoricalData.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../ModelSelection/CarFactors/codeSamplesforCategoricalData.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ModelSelection/CarFactors/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ModelSelection/CarFactors/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ModelSelection/ChatGPT.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ModelSelection/ChatGPT.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ModelSelection/Generalization.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../ModelSelection/Generalization.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ModelSelection/ModelDecisionFactors.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../ModelSelection/ModelDecisionFactors.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ModelSelection/ModelSelect.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../ModelSelection/ModelSelect.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ModelSelection/ModelSelectionExercise.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../ModelSelection/ModelSelectionExercise.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ModelSelection/ModelTypes.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../ModelSelection/ModelTypes.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ModelSelection/SpeedDatingData.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../ModelSelection/SpeedDatingData.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ModelSelection/SpeedDatingDataKey.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../ModelSelection/SpeedDatingDataKey.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ModelSelection/SpeedDatingKey.md" beforeDir="false" afterPath="$PROJECT_DIR$/../ModelSelection/SpeedDatingKey.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ModelSelection/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../ModelSelection/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cvbasicsAssignment/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../cvbasicsAssignment/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cvbasicsAssignment/.idea/cvbasicsAssignment.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../cvbasicsAssignment/.idea/cvbasicsAssignment.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cvbasicsAssignment/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cvbasicsAssignment/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cvbasicsAssignment/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cvbasicsAssignment/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cvbasicsAssignment/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cvbasicsAssignment/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cvbasicsAssignment/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cvbasicsAssignment/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cvbasicsAssignment/.ipynb_checkpoints/Dockerfile-checkpoint" beforeDir="false" afterPath="$PROJECT_DIR$/../cvbasicsAssignment/.ipynb_checkpoints/Dockerfile-checkpoint" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cvbasicsAssignment/.ipynb_checkpoints/GraphicDataProcessing-checkpoint.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cvbasicsAssignment/.ipynb_checkpoints/GraphicDataProcessing-checkpoint.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cvbasicsAssignment/.ipynb_checkpoints/ObjectDetection-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../cvbasicsAssignment/.ipynb_checkpoints/ObjectDetection-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cvbasicsAssignment/.ipynb_checkpoints/objectDetectionService-checkpoint.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cvbasicsAssignment/.ipynb_checkpoints/objectDetectionService-checkpoint.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cvbasicsAssignment/.ipynb_checkpoints/readme-checkpoint.md" beforeDir="false" afterPath="$PROJECT_DIR$/../cvbasicsAssignment/.ipynb_checkpoints/readme-checkpoint.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cvbasicsAssignment/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../cvbasicsAssignment/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cvbasicsAssignment/GraphicDataProcessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cvbasicsAssignment/GraphicDataProcessing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cvbasicsAssignment/ObjectDetection.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../cvbasicsAssignment/ObjectDetection.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cvbasicsAssignment/Pictures/bermuda.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../cvbasicsAssignment/Pictures/bermuda.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cvbasicsAssignment/Pictures/tobie_ernie_papi.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../cvbasicsAssignment/Pictures/tobie_ernie_papi.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cvbasicsAssignment/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../cvbasicsAssignment/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cvbasicsAssignment/assignment.md" beforeDir="false" afterPath="$PROJECT_DIR$/../cvbasicsAssignment/assignment.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cvbasicsAssignment/coco.names" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cvbasicsAssignment/detected_objects.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../cvbasicsAssignment/detected_objects.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cvbasicsAssignment/img.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cvbasicsAssignment/img.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cvbasicsAssignment/img_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cvbasicsAssignment/img_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cvbasicsAssignment/objectDetectionService.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cvbasicsAssignment/objectDetectionService.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cvbasicsAssignment/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../cvbasicsAssignment/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cvbasicsAssignment/tutorial.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../cvbasicsAssignment/tutorial.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataAnalytics/.ipynb_checkpoints/PreliminaryDataPipeline-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../dataAnalytics/.ipynb_checkpoints/PreliminaryDataPipeline-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataAnalytics/.ipynb_checkpoints/pandasprofileing-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../dataAnalytics/.ipynb_checkpoints/pandasprofileing-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataAnalytics/.ipynb_checkpoints/readme-checkpoint.md" beforeDir="false" afterPath="$PROJECT_DIR$/../dataAnalytics/.ipynb_checkpoints/readme-checkpoint.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataAnalytics/.ipynb_checkpoints/systemplan-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../dataAnalytics/.ipynb_checkpoints/systemplan-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataAnalytics/PreliminaryDataPipeline.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../dataAnalytics/PreliminaryDataPipeline.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataAnalytics/pandasprofileing.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../dataAnalytics/pandasprofileing.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataAnalytics/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../dataAnalytics/readme.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2dneBIEiW3OWRCZ3dyGNepTvzF6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c3bbb298-3b24-4796-8ab7-461e88237943" name="Changes" comment="" />
+      <created>1710648134394</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1710648134394</updated>
+      <workItem from="1710648136292" duration="1157000" />
+      <workItem from="1710650635901" duration="7000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
