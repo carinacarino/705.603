@@ -1,0 +1,8 @@
+opencv-python
+numpy
+pytesseract
+ffmpeg-python
+matplotlib
+Pillow
+pandas
+numpy
