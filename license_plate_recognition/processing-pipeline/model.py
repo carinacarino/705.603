@@ -63,10 +63,6 @@ class Object_Detection_Model:
         """
         Processes all images in the specified directory and saves the cropped images in the output directory.
 
-        Args:
-            directory_path (str): The path to the directory containing the input images.
-            output_directory (str): The path to the directory where the cropped images will be saved.
-            lpr_model_path (tuple): A tuple containing the paths to the pre-trained model weights and configuration files.
         """
         # Create the output directory if it doesn't exist
         os.makedirs(output_directory, exist_ok=True)
