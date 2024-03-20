@@ -20,11 +20,11 @@ The Video Streamer component is responsible for streaming video files or live vi
 
 #### 2. Processing Pipeline
 The Processing Pipeline is responsible for ingesting video streams, preprocessing frames, detecting and localizing license plates, and performing optical character recognition (OCR) to extract license plate numbers. It consists of the following main components:
-- `main.py`:  coordinates the overall processing pipeline and serves as the entry point for the application.
-- `data_pipeline.py`: responsible for extracting frames from video streams and applying transformations to the extracted frames.
-- `dataset.py`: handles the loading and splitting of the image dataset for training and evaluation purposes.
-- `metrics.py`:  provides functionality for calculating the Intersection over Union (IoU) between two bounding boxes and computing the Average Precision (AP) metric for object detection tasks.
-- `model.py`:  implements an object detection model for license plate detection and utilizes Tesseract OCR to extract the license plate text from the cropped license plate images.
+- [`main.py`](processing-pipeline/main.py):  coordinates the overall processing pipeline and serves as the entry point for the application.
+- [`data_pipeline.py`](processing-pipeline/data_pipeline.py): responsible for extracting frames from video streams and applying transformations to the extracted frames.
+- [`dataset.py`](processing-pipeline/dataset.py): handles the loading and splitting of the image dataset for training and evaluation purposes.
+- [`metrics.py`](processing-pipeline/metrics.py):  provides functionality for calculating the Intersection over Union (IoU) between two bounding boxes and computing the Average Precision (AP) metric for object detection tasks.
+- [`model.py`](processing-pipeline/model.py):  implements an object detection model for license plate detection and utilizes Tesseract OCR to extract the license plate text from the cropped license plate images.
 
 #### 3. Docker Compose
 The `docker-compose.yml` file orchestrates and manages the entire ALPR system, defining the services (Video Streamer and Processing Pipeline), networks, volumes, and other configurations required for the application to run seamlessly in a containerized environment.
@@ -37,6 +37,9 @@ The overall workflow of the ALPR system is as follows:
 - The Model Service detects and localizes license plates in the transformed frames, generating bounding box predictions.
 - The cropped license plate images are passed to the OCR Service for text extraction and confidence score calculation.
 - The recognized license plate text and confidence scores are saved in a CSV file.
+
+#### 5. ANALYSIS
+[Exploratory Data Analysis]()
 ___
 ## RUNNING THE ALPR SYSTEM LOCALLY
 
