@@ -1,5 +1,42 @@
 # CASE STUDY: AUTOMATED LICENSE PLATE RECOGNITION
+## Project Overview
+The Department of Transportation (DoT) has commissioned the development of an Automated License Plate Recognition (ALPR) system to modernize toll collection on its highways. The goal is to improve traffic flow, reduce congestion, and eliminate the need for manual toll collection.
 
+## System Requirements
+The ALPR system must be capable of accurately and efficiently recognizing license plates from various states under the following conditions:
+
+- High-speed vehicle movement
+- Day and night operations
+- Different weather conditions (e.g., rain, snow, fog)
+
+## System Architecture
+![docker_compose.png](processing-pipeline/docker_compose.png)
+
+
+The ALPR system follows a microservices architecture and is designed to be deployed using Docker containers. The system comprises two main components: the **Processing Pipeline** and the **Video Streamer**. These components are orchestrated and managed using Docker Compose.
+
+#### 1. Video Streamer
+The Video Streamer component is responsible for streaming video files or live video feeds over UDP (User Datagram Protocol). It is implemented using FFmpeg, a powerful multimedia framework, and packaged as a Docker container. In a production environment, the Video Streamer component would need to be modified to accept live video streams from IP cameras or other video sources using appropriate protocols (e.g., RTSP) and configurations.
+
+#### 2. Processing Pipeline
+The Processing Pipeline is responsible for ingesting video streams, preprocessing frames, detecting and localizing license plates, and performing optical character recognition (OCR) to extract license plate numbers. It consists of the following main components:
+- `main.py`:  coordinates the overall processing pipeline and serves as the entry point for the application.
+- `data_pipeline.py`: responsible for extracting frames from video streams and applying transformations to the extracted frames.
+- `dataset.py`: handles the loading and splitting of the image dataset for training and evaluation purposes.
+- `metrics.py`:  provides functionality for calculating the Intersection over Union (IoU) between two bounding boxes and computing the Average Precision (AP) metric for object detection tasks.
+- `model.py`:  implements an object detection model for license plate detection and utilizes Tesseract OCR to extract the license plate text from the cropped license plate images.
+
+#### 3. Docker Compose
+The `docker-compose.yml` file orchestrates and manages the entire ALPR system, defining the services (Video Streamer and Processing Pipeline), networks, volumes, and other configurations required for the application to run seamlessly in a containerized environment.
+
+#### 4. Workflow
+The overall workflow of the ALPR system is as follows:
+- The Video Streamer streams a video file or live video feed over UDP.
+- The Processing Pipeline's Data Pipeline Service ingests the video stream from the Video Streamer and extracts frames.
+- The extracted frames undergo transformations in the Data Pipeline Service.
+- The Model Service detects and localizes license plates in the transformed frames, generating bounding box predictions.
+- The cropped license plate images are passed to the OCR Service for text extraction and confidence score calculation.
+- The recognized license plate text and confidence scores are saved in a CSV file.
 ___
 ## RUNNING THE ALPR SYSTEM LOCALLY
 
@@ -20,25 +57,7 @@ Note: ffmpeg.exe will run for a set duration (60 seconds) and will terminate bef
 ![img_2.png](processing-pipeline/img_2.png)
 
 ___
-## ALPR SYSTEM with DOCKER
-![docker_compose.png](processing-pipeline/docker_compose.png)
-
-![img_4.png](processing-pipeline/img_4.png)
-The system utilizes a multi-container Docker setup, ensuring modular architecture, where each container serves a unique role in the overall application. Below is a description of each container and instructions on how to run them.
-
-### Step 1: Define Docker Containers
-
-#### Video Streamer Container
-
-The `video-streamer` container is responsible for capturing video streams and possibly preprocessing the video data before sending it to the processing pipeline. This container uses FFmpeg or a similar tool to handle video streaming. 
-
-#### Processing Pipeline Container
-
-The `processing-pipeline` container takes the video input from the `video-streamer` container, extracts frames, identifies license plates within those frames, and uses Optical Character Recognition (OCR) to interpret the license plate numbers. The OCR results, including the recognized text and confidence scores, are saved to a CSV file for review.
-
-### Step 2: Docker Compose
-
-Use Docker Compose to orchestrate the containers.
+## RUNNING THE ALPR SYSTEM USINNG DOCKER
 
 To run the system, make sure you're in the project directory where the `docker-compose.yml` file is located.
 ```shell
