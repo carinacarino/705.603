@@ -39,7 +39,15 @@ The overall workflow of the ALPR system is as follows:
 - The recognized license plate text and confidence scores are saved in a CSV file.
 
 #### 5. ANALYSIS
-[Exploratory Data Analysis]()
+[Exploratory Data Analysis](processing-pipeline/analysis/exploratory_data_analysis.ipynb)
+ Analyze the images and its features.
+
+ 
+[Model_Selection Analysis](processing-pipeline/analysis/model_performance.ipnyb)
+Analyze the performance of the two provided candidate models
+
+#### 6. Systems Plan
+[Systems Plan](SystemsPlan.md)
 ___
 ## RUNNING THE ALPR SYSTEM LOCALLY
 
